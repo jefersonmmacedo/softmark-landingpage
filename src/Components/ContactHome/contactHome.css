@@ -1,0 +1,125 @@
+.ContactHome {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background: linear-gradient(0.25turn, #F9621D, #7D0AC9);
+    padding: 20px;
+}
+.ContactHome .blockContactHome {
+    width: 1100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    margin: 40px auto;
+}
+.ContactHome .blockContactHome .textContactHome {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-top: 2px solid var(--White);
+    padding: 20px 10px;
+}
+.ContactHome .blockContactHome .textContactHome  h2 {
+    font-weight: 900;
+    font-size: 2.8em;
+    color: var(--White);
+}
+.ContactHome .blockContactHome .textContactHome  h5 {
+    font-weight: 600;
+    color: var(--White);
+}
+
+.ContactHome .blockContactHome .formContactHome {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-top: 2px solid var(--White);
+    padding: 20px 0px;
+}
+.ContactHome .blockContactHome .formContactHome input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-bottom: 2px solid var(--White);
+    background: transparent;
+    height: 40px;
+}
+
+.ContactHome .blockContactHome .formContactHome input::placeholder {
+    color: var(--White);
+    font-size: 18px;
+}
+
+.ContactHome .blockContactHome .formContactHome textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-bottom: 2px solid var(--White);
+    background: transparent;
+    height: 80px;
+    resize: none;
+}
+
+.ContactHome .blockContactHome .formContactHome textarea::placeholder {
+    color: var(--White);
+    font-size: 18px;
+}
+
+.ContactHome .blockContactHome .formContactHome button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: 2px solid var(--White);
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: var(--White);
+    background: transparent;
+    margin: 10px 0px;
+    font-size: 18px;
+}
+
+
+@media(max-width:750px) {
+    .ContactHome .blockContactHome {
+        width: 95%;
+    }
+    
+    @media(max-width:750px) {
+        .ContactHome .blockContactHome {
+            width: 95%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            margin: 40px auto;
+        }
+        @media(max-width:700px) {
+            .ContactHome .blockContactHome .formContactHome {
+                width: 80%;
+            }
+            .ContactHome .blockContactHome .textContactHome {
+                width: 80%;
+            }
+
+
+            @media(max-width:600px) {
+                .ContactHome .blockContactHome .formContactHome {
+                    width: 95%;
+                }
+                .ContactHome .blockContactHome .textContactHome {
+                    width: 95%;
+                }
+            }
+        }
+}
+}

@@ -1,0 +1,166 @@
+
+.Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--BorderInput);
+    background-image: url("../../assets/images/background03.jpg"); 
+    background-color: #000; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    padding: 40px 20px;
+}
+.Footer .top{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 90%;
+    padding: 20px;
+}
+
+.Footer .top .image {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 33%;
+  }
+  .Footer .top .image a img {
+    height: 50px;
+  }
+
+ .Footer .top .image .icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px 0;
+   }
+  .Footer .top .image .icons .unicIconMenu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding:5px;
+    background-color: var(--White);
+    color: var(--Black);
+    border-radius: 6px;
+    margin: 0 5px;
+    border: none;
+    font-size: 16px;
+    text-decoration: none;
+   }
+
+  .Footer .top .image .icons .unicIconMenu:hover {
+  background-color: var(--Primary);
+  color: var(--White);
+ }
+
+
+.Footer .top .links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 33%;
+   }
+
+   .Footer .top .links a {
+    color: var(--White);
+    text-decoration: none;
+    margin: 3px 0;
+    font-weight: 700;
+   }
+
+   .Footer .top .links a:hover {
+    color: var(--Primary);
+   }
+
+   .Footer .top .whatsappFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 33%;
+   }
+   .Footer .top .whatsappFooter h4 {
+    color: var(--White);
+    margin: 3px 0;
+    font-weight: 700;
+   }
+   .Footer .top .whatsappFooter button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: 2px solid var(--White);
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: var(--White);
+    background: transparent;
+    margin: 10px 0px;
+    font-size: 18px;
+}
+
+
+   .Footer .copy{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    border-top: 2px solid var(--White);
+    color: var(--White);
+    padding: 20px;
+   }
+
+   @media(max-width:750px) {
+    .Footer .top{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content:  flex-start;
+      width: 90%;
+      padding: 0px;
+  }
+
+  .Footer .top .image {
+    flex-direction: column;
+    align-items: center;
+    justify-content:  flex-start;
+    margin: 10px;
+    width: 95%;
+  }
+  .Footer .top  .links {
+    flex-direction: column;
+    align-items: center;
+    justify-content:  flex-start;
+    margin: 10px;
+    width: 95%;
+  }
+  .Footer .top  .whatsappFooter {
+    flex-direction: column;
+    align-items: center;
+    justify-content:  flex-start;
+    margin: 20px 10px;
+    width: 95%;
+  }
+
+
+
+   @media(max-width:600px) {
+    .Footer .top .image a img {
+      height: 30px;
+    }
+
+
+    .Footer .copy{
+    text-align: center;
+     }
+  
+   }
+   }

@@ -1,0 +1,111 @@
+.ServicesHome {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("../../assets/images/background05.jpg"); 
+    background-color: #000; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.ServicesHome .blockServicesHome {
+    width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 40px 20px;
+    margin: 0 auto;
+}
+.ServicesHome .blockServicesHome .textTopServices {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.ServicesHome .blockServicesHome .textTopServices h5 {
+    margin: 5px;
+    font-weight: 600;
+    color: var(--White);
+}
+.ServicesHome .blockServicesHome .textTopServices h2 {
+    font-weight: 900;
+    font-size: 1.8em;
+    background: linear-gradient(0.25turn, #F9621D, #7D0AC9);
+    margin: 5px;
+    padding: 5px 10px;
+    color: var(--White);
+}
+.ServicesHome .blockServicesHome .servicesList {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.ServicesHome .blockServicesHome .servicesList .serviceHomeUnic {
+    width: 230px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+    color: var(--Paragraph);
+    background: var(--White);
+}
+.ServicesHome .blockServicesHome .servicesList .serviceHomeUnic svg {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.ServicesHome .blockServicesHome .servicesList .serviceHomeUnic h4 {
+    font-weight: 700;
+    margin: 10px 0;
+}
+.ServicesHome .blockServicesHome .servicesList .serviceHomeUnic .color {
+    width: 30px;
+    height: 5px;
+    background: linear-gradient(0.25turn, #F9621D, #7D0AC9);
+    margin: 10px 0;
+    border-radius: 35px;
+}
+
+.ServicesHome .blockServicesHome .servicesList .serviceHomeUnic:hover {
+    background: var(--PrimaryHover);
+     color: var(--White);
+}
+
+.ServicesHome .blockServicesHome .servicesList .serviceHomeUnic button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+      padding: 5px 10px;
+      border-radius: 25px;
+      background: linear-gradient(0.25turn, #F9621D, #7D0AC9);
+      color: var(--White);
+      margin:30px 0 10px 0px;
+      border: none;
+      font-weight: 500;
+      /* font-size: 18px; */
+}
+
+@media (max-width: 1120px) {
+    .ServicesHome .blockServicesHome {
+        width: 100%;
+        padding: 40px 5px;
+    }
+
+    @media (max-width:500px) {
+        .ServicesHome .blockServicesHome .servicesList .serviceHomeUnic {
+            width: 300px;
+        }
+    }
+}

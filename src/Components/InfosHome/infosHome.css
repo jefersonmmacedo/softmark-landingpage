@@ -1,0 +1,100 @@
+.infosHome {
+    padding-top: 200px;
+    width: 100%;
+   color: white;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}
+.infosHome .text {
+   width: 60%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+
+.infosHome .text h1 {
+    font-weight: 900;
+    font-size: 3.2em;
+    background: linear-gradient(0.25turn, #F9621D, #7D0AC9);
+    margin: 5px 10px;
+    padding: 5px 10px;
+}
+
+.infosHome .text h3 {
+    font-weight: 700;
+    margin: 20px;
+    text-shadow: 0.1em 0.1em 0.1em black
+}
+
+.infosHome .text button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+      padding: 10px 20px;
+      border-radius: 25px;
+      background: linear-gradient(0.25turn, #F9621D, #7D0AC9);
+      color: var(--White);
+      margin: 0px;
+      border: none;
+      font-weight: 700;
+      font-size: 18px;
+}
+
+.infosHome .image {
+   width: 20%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
+}
+.infosHome .image img {
+    width: 70%;
+}
+.infosHome .image2 {
+   width: 20%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.infosHome .image2 img {
+   width: 100%;
+}
+
+@media(max-width: 900px) {
+   .infosHome {
+      padding-top: 75px;
+      width: 100%;
+     color: white;
+     display: flex;
+     flex-direction: column-reverse;
+     align-items: center;
+     justify-content: center;
+  }
+
+  .infosHome .text {
+   width: 95%;
+}
+
+  .infosHome .image {
+   display: none;
+  }
+  .infosHome .image2 {
+  width: 250px;
+  }
+
+  @media(max-width: 600px) {
+   .infosHome .image2 {
+      width: 50%;
+      }
+
+      .infosHome .text h1 {
+         font-size: 2.8em;
+     }
+  }
+}

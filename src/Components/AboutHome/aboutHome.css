@@ -1,0 +1,109 @@
+.AboutHome {
+    width: 1100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    padding: 60px 20px;
+    margin: 0 auto;
+}
+.AboutHome .imageAbout {
+    width: 50%;
+    margin: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    object-fit: cover;
+}
+.AboutHome .imageAbout img {
+    width: 100%;
+    height: 450px;
+    border-radius:25px;
+    object-fit: cover;
+}
+.AboutHome .textAbout {
+    width: 50%;
+    margin: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.AboutHome .textAbout h2 {
+    font-weight: 900;
+    font-size: 2.8em;
+    background: linear-gradient(0.25turn, #F9621D, #7D0AC9);
+    margin: 5px;
+    padding: 5px 10px;
+    color: var(--White);
+}
+
+.AboutHome .textAbout h5 {
+    margin: 5px;
+    font-weight: 600;
+    color: var(--Paragraph);
+}
+.AboutHome .textAbout h4 {
+    margin: 20px 5px;
+    font-weight: 500;
+    color: var(--Paragraph);
+}
+.AboutHome .textAbout button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+      padding: 10px 20px;
+      border-radius: 25px;
+      background: linear-gradient(0.25turn, #F9621D, #7D0AC9);
+      color: var(--White);
+      margin: 20px 5px;
+      border: none;
+      font-weight: 700;
+      font-size: 18px;
+}
+
+@media(max-width:1120px) {
+    .AboutHome {
+        width: 100%;
+    }
+
+    @media(max-width:700px) {
+        .AboutHome {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column-reverse;
+            padding: 60px 20px;
+            margin: 0 auto;
+        }
+
+        .AboutHome .imageAbout {
+            width: 100%;
+            margin: 20px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+            object-fit: cover;
+        }
+
+        .AboutHome .imageAbout img {
+            width: 100%;
+            height: 250px;
+            border-radius:25px;
+            object-fit: cover;
+        }
+
+        .AboutHome .textAbout {
+            width: 100%;
+            margin: 20px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+}
