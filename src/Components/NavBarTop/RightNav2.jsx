@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { IoBagOutline,IoCartOutline, IoPersonOutline, IoHeartOutline, IoBagAddOutline,IoEyeOutline,
         IoSearchOutline, IoLogoInstagram, IoLogoFacebook, IoLogoLinkedin, IoGlasses, IoGlassesOutline, IoMailOutline, IoLogoWhatsapp } from 'react-icons/io5';
         import LogoImg from '../../assets/images/Logo.png'
+        import LogoImg2 from '../../assets/images/LogoBC.png'
 
 const UlAdm = styled.ul`
   list-style: none;
@@ -214,6 +215,9 @@ const UlAdm = styled.ul`
   font-size: 14px;
   margin-right: 5px;
  }
+ .top .logo2 {
+    display: none;
+  }
  .top .logo {
     padding: 5px 0;
   }
@@ -278,12 +282,62 @@ const UlAdm = styled.ul`
     right: 0;
     height: 100vh;
     width: 90%;
-    padding-top: 3.5rem;
+    padding-top: 0rem;
     transition: transform 0.3s ease-in-out;
-    background-color: rgba(255,255,255);
+    background: rgba(0,0,0, 0.9);
     z-index: 98;
 
+    .contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 20px;
+      height: auto;
+      background-color: transparent;
+      color: var(--White);
+    }
 
+    .contact .infosContact {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin: 5px 0;
+     }
+    
+     .contact .infosContact h4 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+     }
+    
+     .contact .infosContact h4 svg {
+      margin-right: 5px;
+     }
+    
+     .contact .off {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin: 5px 0;
+     }
+    
+     .contact .off h4 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+     }
+    
+     .contact .off h4 svg {
+      margin-right: 5px;
+     }
     
  .top {
   display: flex;
@@ -293,7 +347,56 @@ const UlAdm = styled.ul`
   width: 100%;
   height: 300px;
   padding: 0px 20px;
+  background-color: transparent;
 }
+
+.top .logo2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 5px 0;
+}
+
+.top .logo2 a img {
+  height: 45px;
+}
+
+
+
+.top .logo {
+  display: none;
+}
+
+.top .actions {
+  width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    color: var(--Primary);
+ }
+
+ .top .actions a {
+  text-decoration: none;
+  color: var(--White);
+  font-weight: 600;
+  font-size: 16px;
+  margin: 10px;
+}
+ .top .actions a:hover {
+  text-decoration: none;
+  color: var(--PrimaryHover);
+  font-weight: 600;
+}
+ .top .actions a svg {
+  font-size: 24px;
+  margin: 10px;
+}
+
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -330,6 +433,29 @@ const UlAdm = styled.ul`
   margin-bottom: 10px;
 }
 
+.top .search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.top .search button{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background: linear-gradient(0.25turn, #7D0AC9, #F9621D );
+  color: var(--White);
+  margin: 0px;
+  border: none;
+}
+
 
 .contact .buttonsMenu {
 display: flex;
@@ -337,7 +463,7 @@ flex-direction: column;
 align-items: flex-start;
 justify-content: flex-start;
 width: 100%;
-margin-top: 20px;
+margin-top: 10px;
 }
 .contact .buttonsMenu .iconsMenu{
 display: flex;
@@ -345,6 +471,7 @@ flex-direction: row;
 align-items: center;
 justify-content: center;
 margin: 0px;
+width: 100%;
 }
 .contact .buttonsMenu .iconsMenu .unicIconMenu{
 display: flex;
@@ -353,7 +480,7 @@ align-items: center;
 justify-content: center;
 padding:5px;
 background-color: var(--BorderHover);
-color: var(--Primary);
+color: var(--White);
 border-radius: 6px;
 margin: 5px;
 border: none;
@@ -471,6 +598,11 @@ const RightNav2 = ({ open }) => {
       <div className="logo">
       <Link to='/'>
       <img src={LogoImg} alt="Logo Sua Chave" />
+      </Link>
+      </div>
+      <div className="logo2">
+      <Link to='/'>
+      <img src={LogoImg2} alt="Logo Sua Chave" />
       </Link>
       </div>
 
